@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background: url(bg.jpg);
+  background: image-url("bg.jpg");
   padding-top: 100px;
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead {
-  background: url(headerbg.jpg);
+  background: image-url("headerbg.jpg");
   position: fixed;
   top: 0;
   left: 0;

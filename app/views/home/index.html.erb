@@ -1,69 +1,9 @@
 <div class="row">
     
   <ul class="thumbnails" id="thumbnails" style="height: 1271px;">
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_01.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_01.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_02.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_02.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_04.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_04.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_06.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_06.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_07.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_07.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_08.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_08.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_09.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-       <%= image_tag "photo_09.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_10.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_10.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_11.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_11.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-    <li class="col-md-3 col-sm-3 col-xs-12">
-      <a href="assets/photo_12.jpg" class="thumbnail" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
-        <%= image_tag "photo_12.jpg" %>
-        <span class="caption"><i class="icon-plus-sign"></i></span>
-      </a>
-    </li>
-
+    <% @images.each do |num| %>
+      <%= render 'image', num: num %>
+    <% end %>
   </ul>
 
 </div>
