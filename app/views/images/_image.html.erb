@@ -1,0 +1,10 @@
+<li class="col-md-3 col-sm-3 col-xs-12" data-id="1" data-type="portraits">
+  <a href="<%= image.images.standard_resolution.url %>" class="thumbnail" data-toggle="lightbox" 
+    data-gallery="example-gallery" data-type="image">
+    <%= image_tag image.images.standard_resolution.url %>
+    <div class="instagram-caption"> <%= media.caption.try :text %> </div>
+    <span class="caption">
+      <i class="icon-plus-sign"></i>
+    </span>
+  </a>
+</li>

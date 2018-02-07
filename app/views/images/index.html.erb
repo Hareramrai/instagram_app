@@ -1,0 +1,7 @@
+<div class="row">
+  <ul class="thumbnails" id="thumbnails" style="height: 1271px;">
+    <%@images.each do |media| %>
+      <%= render "media", media: media %>
+    <% end %>
+  </ul>
+</div>

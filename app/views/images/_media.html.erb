@@ -1,0 +1,7 @@
+<% if media.carousel_media.present? %>
+  <% media.carousel_media.each do |image|  %>
+    <%= render "image", image: image, media: media %>
+  <% end %>
+<% else %>
+  <%= render "image", image: media, media: media %>
+<% end %>
